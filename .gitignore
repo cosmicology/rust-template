@@ -16,3 +16,11 @@ desktop.ini
 *.iml
 .idea
 .eclipse
+
+
+#Added by cargo
+#
+#already existing elements were commented out
+
+/target
+#Cargo.lock
