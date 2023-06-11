@@ -3,8 +3,9 @@
 	"extensions": [
 		"cschleiden.vscode-github-actions",
 		"ms-vsliveshare.vsliveshare",
-		"matklad.rust-analyzer",
+		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
+		"pkief.material-icon-theme",
 		"vadimcn.vscode-lldb"
 	],
 	"dockerFile": "Dockerfile",
@@ -14,5 +15,10 @@
 		"files.exclude": {
 			"**/LICENSE*": true
 		}
+	},
+	"features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+        }
 	}
 }
