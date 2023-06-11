@@ -1,7 +1,7 @@
 ## update and install some things we should probably have
 apt-get update
 apt-get install -y curl sudo net-tools htop vim git tmux build-essential zsh jq gnupg2 openssl \
-libssl-dev libsqlite3-dev python-openssl python3 openssh-server openssh-client
+libssl-dev libsqlite3-dev python-openssl python3 openssh-server openssh-client pkg-config
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
