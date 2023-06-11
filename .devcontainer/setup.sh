@@ -1,6 +1,7 @@
 ## update and install some things we should probably have
 apt-get update
-apt-get install -y curl sudo net-tools htop vim git tmux build-essential zsh jq gnupg2 openssl pyenv
+apt-get install -y curl sudo net-tools htop vim git tmux build-essential zsh jq gnupg2 openssl \
+libssl-dev libsqlite3-dev python-openssl python3 openssh-server openssh-client
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
@@ -12,6 +13,7 @@ rustup component add clippy --toolchain nightly
 
 cargo install cargo-expand
 cargo install cargo-edit
+cargo install cargo-watch
 
 ## setup and install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
